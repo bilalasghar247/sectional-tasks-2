@@ -1,0 +1,251 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+          backgroundColor: Colors.lightBlueAccent,
+          // appBar: AppBar(
+          //   title: Text('Student Card '),
+          //   centerTitle: true,
+          //   backgroundColor: Colors.blueGrey,
+          // ),
+          body: SafeArea(
+            child: Column(
+              children: [
+                Container(
+                  child: Text(''),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(100.0, 180.0, 0, 0),
+                  child: Text(
+                    'Excellent!',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 30.0, color: Colors.white),
+                  ),
+                ),
+                SizedBox(
+                  height: 15.0,
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(100.0, 0.0, 0, 0),
+                  child: Text(
+                    'YOU ROCK !',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 30.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                ),
+                SizedBox(
+                  height: 15.0,
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(70.0, 0.0, 0, 0),
+                  child: Text(
+                    'You finished your routine ,',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 20.0,
+                        // fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                ),
+                SizedBox(
+                  height: 15.0,
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(70.0, 0.0, 0, 0),
+                  child: Text(
+                    'How do you feeel ??',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 20.0,
+                        // fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                ),
+                SizedBox(
+                  height: 15.0,
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(70.0, 0.0, 0, 0),
+                  child: Text(
+                    'The next time will be eaiser !',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 20.0,
+                        // fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                ),
+                SizedBox(
+                  height: 80.0,
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(70.0, 0.0, 0, 0),
+                  child: Text(
+                    'Share your experience ',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 20.0,
+                        // fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                ),
+                Container(
+                  child: Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            child: CircleAvatar(
+                              backgroundImage: AssetImage('images/7.png'),
+                              backgroundColor: Colors.grey,
+                              radius: 30.0,
+                            ),
+                          ),
+                          Container(
+                            child: CircleAvatar(
+                              backgroundImage: AssetImage('images/9.png'),
+                              backgroundColor: Colors.grey,
+                              radius: 30.0,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Text(' Go to home '),
+                ),
+                Container(),
+              ],
+            ),
+          )),
+    );
+  }
+}
+
+//body:Padding(
+//   padding: EdgeInsets.all(20.0),
+//   child: Text(' Hello'),
+// ),
+// body:Container(
+//   //
+//   // padding: EdgeInsets.all(50.0),
+//   padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 40.0),
+//   margin: EdgeInsets.fromLTRB(10.0, 40.0, 0.0, 20.0),
+//   color: Colors.green,
+//   body"child: Text(
+//     'Comsats Institu of Information Technology Vehari',
+//     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
+//   ),
+// ),
+
+// SizedBox(
+//   height: 10.0,
+// ),
+// Text(
+//   'Comsats Univerisity Islamabad Vehari Campus',
+//   textAlign: TextAlign.center,
+//   style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+// ),
+// SizedBox(
+//   height: 10.0,
+// ),
+// Container(
+//   height: 35.0,
+//   width: double.infinity,
+//   color: Colors.red,
+//   padding: EdgeInsets.all(3.0),
+//   child: Text(
+//     'BCS',
+//     textAlign: TextAlign.center,
+//     style: TextStyle(
+//       fontSize: 20.0,
+//     ),
+//   ),
+// ),
+// SizedBox(
+//   height: 10.0,
+// ),
+// Container(
+//   child: Column(
+//     children: [
+//       Container(
+//         width: 200.0,
+//         height: 250,
+//         decoration: BoxDecoration(
+//           image: DecorationImage(
+//             fit: BoxFit.fitHeight,
+//             image: AssetImage('Images/6.jfif'),
+//           ),
+//         ),
+//       ),
+//       SizedBox(
+//         height: 20.0,
+//       ),
+//       Container(
+//         child: Text(
+//           'SAIF ULLAH',
+//           style: TextStyle(
+//               fontSize: 20.0, fontWeight: FontWeight.bold),
+//         ),
+//       ),
+//       SizedBox(
+//         height: 5.0,
+//       ),
+//       Container(
+//         child: Text(
+//           'Reg# CIIT/SP18-BCS-104',
+//           style: TextStyle(
+//               fontSize: 20.0, fontWeight: FontWeight.bold),
+//         ),
+//       ),
+//       SizedBox(
+//         height: 10.0,
+//       ),
+//       Container(
+//         child: Text(
+//           'CNIC # 36601-9570919-5',
+//           style: TextStyle(
+//               fontSize: 20.0, fontWeight: FontWeight.bold),
+//         ),
+//       ),
+//       SizedBox(
+//         height: 10.0,
+//       ),
+//       Container(
+//         child: Text(
+//           'Issued on 7-03-2018',
+//           style: TextStyle(
+//               fontSize: 20.0, fontWeight: FontWeight.bold),
+//         ),
+//       ),
+//       SizedBox(
+//         height: 10.0,
+//       ),
+//       Container(
+//         height: 60.0,
+//         color: Colors.blue,
+//         width: double.infinity,
+//         padding: EdgeInsets.all(18),
+//         child: Text(
+//           'Departement of Computer Science ',
+//           textAlign: TextAlign.center,
+//           style: TextStyle(
+//               fontSize: 20.0, fontWeight: FontWeight.bold),
+//         ),
+//       ),
+//     ],
+//   ),
+// ),
